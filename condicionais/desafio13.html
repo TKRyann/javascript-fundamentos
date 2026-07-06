@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafio13</title>
+</head>
+
+<body>
+  <h2>Calculadora simples </h2>
+
+  <p>
+    Pergunte:
+
+    Primeiro número
+
+    Segundo número
+
+  <p>Operação
+
+    +
+    -
+    *
+    /
+
+    Utilize if para realizar a operação escolhida.</p>
+  </p>
+</body>
+
+<script>
+
+  let num1 = prompt('Qual o primeiro numero?')
+  let num2 = prompt('Qual o segundo numero?')
+  let operacao = prompt('Qual operação o usuário quer fazer?')
+
+  if (operacao == '+') {
+    let adicao = Number(num1) + Number(num2) // adição
+    // console.log(`O resultado: ${adicao}`)
+    console.log('O resultado:' + adicao)
+  } else if (operacao == '*') {
+    let multiplicacao = Number(num1) * Number(num2) // multiplicação
+    console.log('O resultada:' + multiplicacao)
+  } else if (operacao == '-') {
+    let subtracao = Number(num1) - Number(num2) // subtração
+    console.log('O resultada:' + subtracao)
+  } else if (operacao == '/') {
+    let divisao = Number(num1) / Number(num2) // divisão
+    console.log('O resultada:' + divisao)
+  } else {
+    console.log('Operação Inválidas. Faça novamente.')
+  }
+
+
+</script>
+
+</html>
