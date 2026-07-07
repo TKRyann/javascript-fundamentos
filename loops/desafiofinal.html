@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    let opcao = 0;
+
+    while (opcao !== 4) {
+      opcao = Number(prompt(`
+Escolha uma opção:
+
+1 - Somar
+2 - Multiplicar
+3 - Subtrair
+4 - Sair
+`));
+
+      if (opcao === 1) {
+        let num1 = Number(prompt("Digite o primeiro número:"));
+        let num2 = Number(prompt("Digite o segundo número:"));
+
+        let resultado = num1 + num2;
+
+        alert(`Resultado: ${resultado}`);
+
+      } else if (opcao === 2) {
+        let num1 = Number(prompt("Digite o primeiro número:"));
+        let num2 = Number(prompt("Digite o segundo número:"));
+
+        let resultado = num1 * num2;
+
+        alert(`Resultado: ${resultado}`);
+
+      } else if (opcao === 3) {
+        let num1 = Number(prompt("Digite o primeiro número:"));
+        let num2 = Number(prompt("Digite o segundo número:"));
+
+        let resultado = num1 - num2;
+
+        alert(`Resultado: ${resultado}`);
+
+      } else if (opcao === 4) {
+        alert("Programa encerrado.");
+
+      } else {
+        alert("Opção inválida!");
+      }
+    }
+  </script>
+</body>
+
+</html>

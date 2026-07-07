@@ -1,8 +1,8 @@
 // Mostre seu nome 5 vezes.
 
-let nome = "Ryann";
+let contador = 1;
 
-while (nome <= 5) {
-  console.log(nome);
-  nome++;
+while (contador <= 5) {
+  console.log("Ryann");
+  contador++;
 }
