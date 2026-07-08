@@ -1,3 +1,5 @@
+// Testando funções
+
 function mensagem() {
   console.log("ola mundo");
 }
