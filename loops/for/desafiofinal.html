@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafio final</title>
+</head>
+
+<body>
+  <h1>Faça uma pequena calculadora de tabuada</h1>
+  <style>
+    body {
+      background-color: burlywood;
+    }
+
+    h1 {
+      background-color: aqua;
+      margin: 50px 0 0;
+      font-size: 56px;
+    }
+  </style>
+</body>
+
+<script>
+
+  let numero = prompt("Qual número você deseja?")
+  let multiplicador = prompt('Até qual número deseja calcular?')
+
+
+  for (i = 1; i <= multiplicador; i++) {
+    let resultado = numero * i
+    console.log(`${numero} * ${i} = ${resultado}`)
+  }
+
+</script>
+
+</html>
