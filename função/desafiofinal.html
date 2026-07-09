@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafio Final</title>
+</head>
+
+<body>
+  <main>
+    <header>
+      <h1>Desafio Final</h1>
+      <p>Monte uma calculadora completa com funções separadas para somar, subtrair, multiplicar e dividir.</p>
+    </header>
+
+    <section>
+      <h2>Requisitos</h2>
+      <ul>
+        <li>somar();</li>
+        <li>subtrair();</li>
+        <li>multiplicar();</li>
+        <li>dividir();</li>
+      </ul>
+    </section>
+  </main>
+
+</body>
+<script>
+  function somar(a, b) {
+    return a + b;
+
+  }
+  function subtracao(a, b) {
+    return a - b;
+
+  }
+  function multiplicacao(a, b) {
+    return a * b;
+
+  }
+  function divisao(a, b) {
+    return a / b;
+
+  }
+
+  let num1 = Number(prompt('Digite o seu primeiro numero:'))
+  let num2 = Number(prompt('Digite o seu segundo numero:'))
+  let operacao = prompt('Digite a operação (+, -, * ou /):')
+
+
+  if (operacao === '+') {
+    alert(somar(num1, num2))
+  } else if (operacao === '-') {
+    alert(subtracao(num1, num2))
+  } else if (operacao === '*') {
+    alert(multiplicacao(num1, num2))
+  } else if (operacao === '/') {
+    alert(divisao(num1, num2))
+  } else {
+    alert("Operação inválida!");
+  }
+</script>
+
+</html>
