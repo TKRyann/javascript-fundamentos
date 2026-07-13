@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DesafioFinal</title>
+</head>
+
+<body>
+
+</body>
+<script>
+
+  let listCompra = [];
+
+  let opcao = 0;
+  while (opcao !== 4) {
+    opcao = Number(prompt(`
+Escolha uma opção:
+
+1 - Adicionar produto
+2 - Mostrar lista
+3 - Remover último produto
+4 - Sair
+`));
+
+    if (opcao === 1) {
+      let addProduto = prompt("Qual produto deseja adicionar?")
+      listCompra.push(addProduto)
+    } else if (opcao === 2) {
+      for (let i = 1; i < listCompra.length; i++) {
+        alert(`Posição ${i} - Produto: ${listCompra[i]}`)
+      }
+    } else if (opcao == 3) {
+      listCompra.pop()
+      alert("Último produto removido.")
+    } else {
+      alert('Você saiu da lista!!')
+    }
+
+  }
+</script>
+
+</html>
